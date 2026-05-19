@@ -20,7 +20,7 @@ if you prefer download via zip file, you need to extract
 but if you prefer cloning project do this 
 ```
 cd Desktop
-git clone https://github.com/jeremiskie/springboot-chat-system.git
+git clone https://github.com/jeremiskie/springboot-whatsGood.git
 ```
 
 ##### Setup your application.properties inside of src folder
