@@ -1,6 +1,5 @@
 # Springboot Chat System
 
---- 
 
 ## Quick Start Guide
 
@@ -14,10 +13,9 @@
 - Spring Dev Tools
 
 
---- 
 ## How to run project
 
-##### Step 1: Clone the project or download via zip
+##### Clone the project or download via zip
 if you prefer download via zip file, you need to extract
 but if you prefer cloning project do this 
 ```
@@ -25,12 +23,12 @@ cd Desktop
 git clone https://github.com/jeremiskie/springboot-chat-system.git
 ```
 
-##### Step 2: Setup your application.properties inside of src folder
+##### Setup your application.properties inside of src folder
 ```
 src/main/resources/application.properties
 ```
 
-##### Step 3: Put these code
+##### Put these code
 ```
 spring.application.name=spring-messaging-backend
 spring.datasource.url=jdbc:postgresql://localhost:5432/basic_messaging
@@ -44,15 +42,15 @@ spring.jpa.properties.hibernate.format_sql=true
 server.port=8080
 ```
 
-##### Step 4: Go to postgres desktop or pgAdmin 4 and create database and name it
+##### Go to postgres desktop or pgAdmin 4 and create database and name it
 ```
 basic_messaging
 ```
 
-##### Step 5: Run this project in main class by click button of the top center in IntelliJ IDE
+##### Run this project in main class by click button of the top center in IntelliJ IDE
 
 
-##### Step 6: Download Postman then go add REST API
+##### Download Postman then go add REST API
 After you SEND the request, you need to see the response ``` 201 ok ``` meaning it works, if the response
 is ``404 not found`` meaning the url is cannot be found or misspelled, if the response is ``500 internal server``
 there is error inside of the code.
@@ -81,7 +79,7 @@ Body Cookies  Headers ``201 OK``
 ```
 
 
-#### Step 9: Check your ``name`` if it's exist 
+#### Check your ``name`` if it's exist 
 ``GET`` method
 
 request
@@ -98,7 +96,7 @@ response
 }
 ```
 
-#### Step 8: Create your own message or first chat
+#### Create your own message or first chat
 ``POST`` method
 ```
 http://localhost:8080/api/messages/create-message
@@ -149,7 +147,7 @@ as you may notice the userId is still same because our first account name
 is his id ``id: 1`` so that in message request body is we need to target 
 our account name id's to link that message or multiple message
 
-##### Step 9: Check you account name along with your name and list of messages/chat
+##### Check you account name along with your name and list of messages/chat
 
 ``GET`` method
 
